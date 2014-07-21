@@ -18,5 +18,6 @@ urlpatterns = patterns('',
     url(r'^ropero-admin/registrar-ropa/$', 'wear.views.registrarRopa'),
     url(r'^ropero-admin/registrar-ropa/post/$', 'wear.views.registrarRopaPost'),
     url(r'^json-ropa/', 'wear.views.jsonRopa'),
+    url(r'^rfid/(\d+)/', 'wear.views.rfid'),
     url(r'^admin/', include(admin.site.urls)),
 )
